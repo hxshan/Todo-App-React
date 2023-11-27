@@ -1,5 +1,5 @@
 import { useEffect, useState ,useRef} from "react";
-import bg_desk_light from "./assets/bg-desktop-light.jpg"
+import images from "./assets";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import{
@@ -93,8 +93,13 @@ function App() {
   return (
     <div className="header-section w-[100%] relative">
       <img
-        className="w-[100%]"
-        src={bg_desk_light}
+        className="hidden md:block w-[100%]"
+        src={userTheme=="dark"?images.bg_desk_dark:images.bg_desk_light}
+        alt="background"
+      />
+      <img
+        className="md:hidden w-[100%]"
+        src={userTheme=="dark"?images.bg_mob_dark:images.bg_mob_light}
         alt="background"
       />
       <div
