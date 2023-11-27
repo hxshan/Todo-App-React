@@ -93,7 +93,7 @@ function App() {
     <div className="header-section w-[100%] relative">
       <img
         className="w-[100%]"
-        src="assets/images/bg-desktop-light.jpg"
+        src="./assets/images/bg-desktop-light.jpg"
         alt="background"
       />
       <div
