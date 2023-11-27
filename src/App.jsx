@@ -11,6 +11,7 @@ SortableContext,
 verticalListSortingStrategy
 }from "@dnd-kit/sortable"
 
+
 function App() {
   var [todos, setTodos] = useState([]);
   var [activeTodos, setActiveTodos] = useState([]);
@@ -92,7 +93,7 @@ function App() {
     <div className="header-section w-[100%] relative">
       <img
         className="w-[100%]"
-        src="images/bg-desktop-light.jpg"
+        src="@/assets/images/bg-desktop-light.jpg"
         alt="background"
       />
       <div
