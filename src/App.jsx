@@ -111,12 +111,12 @@ function App() {
           <div className="theme hover:cursor-pointer" onClick={()=>toggleTheme()}>
             {
               userTheme == "dark" &&(
-                <img src="src/assets/icon-sun.svg" alt="" />
+                <img src={images.sun} alt="sun" />
               ) 
             }
             {
               userTheme == "light" &&(
-                <img src="src/assets/icon-moon.svg" alt="" />
+                <img src={images.moon} alt="moon" />
               )
             } 
           </div>

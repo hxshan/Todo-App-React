@@ -1,5 +1,6 @@
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
+import images from "../assets";
 
 function TodoItem({ id, todo, isComplete,toggleComplete, deleteTodo}) {
   const {
@@ -42,7 +43,7 @@ const style={
         className="deleteItem"
         onClick={() => { deleteTodo(id);}}
       >
-        X
+        <img src={images.cross} alt="" />
       </button>
     </div>
   );
