@@ -93,7 +93,7 @@ function App() {
     <div className="header-section w-[100%] relative">
       <img
         className="w-[100%]"
-        src="./assets/images/bg-desktop-light.jpg"
+        src="src/assets/bg-desktop-light.jpg"
         alt="background"
       />
       <div
@@ -105,12 +105,12 @@ function App() {
           <div className="theme hover:cursor-pointer" onClick={()=>toggleTheme()}>
             {
               userTheme == "dark" &&(
-                <img src="src/assets/images/icon-sun.svg" alt="" />
+                <img src="src/assets/icon-sun.svg" alt="" />
               ) 
             }
             {
               userTheme == "light" &&(
-                <img src="src/assets/images/icon-moon.svg" alt="" />
+                <img src="src/assets/icon-moon.svg" alt="" />
               )
             } 
           </div>
