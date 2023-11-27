@@ -1,6 +1,5 @@
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-import { useEffect, useState ,useRef} from "react";
 
 function TodoItem({ id, todo, isComplete,toggleComplete, deleteTodo}) {
   const {
