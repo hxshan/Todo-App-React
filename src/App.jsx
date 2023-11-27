@@ -104,9 +104,9 @@ function App() {
       />
       <div
         className="todo-form absolute top-7  left-2/4 
-        -translate-x-2/4 w-[20rem] flex flex-col"
+        -translate-x-2/4 w-[20rem] flex flex-col lg:top-1/3 md:w-[35rem] xl:top-[48%]"
       >
-        <div className="top flex justify-between align-middle w-[20rem]">
+        <div className="top flex justify-between align-middle w-[20rem] md:w-[35rem]">
           <h1 className="text-4xl font-bold text-[#FFFFFF]">TODO</h1>
           <div className="theme hover:cursor-pointer" onClick={()=>toggleTheme()}>
             {

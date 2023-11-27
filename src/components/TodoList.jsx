@@ -26,7 +26,7 @@ function TodoList({
   }, [showing, todos]);
 
   return (
-    <div className="todo-div w-[20rem] drop-shadow-md">
+    <div className="todo-div w-[20rem] drop-shadow-md md:w-[35rem] lg:mt-2 text-Light-Grayish-Blue font-JosefinSans ">
       <DndContext
         collisionDetection={closestCenter}
         onDragEnd={(e) => handleDragEnd(e)}
@@ -76,12 +76,13 @@ function TodoList({
       <div className="List-buttons flex w-[100%] 
       justify-between bg-Very-Light-Gray rounded-b-md
       dark:bg-Very-Dark-Desaturated-Blue
-      dark:text-Very-Light-Gray py-4 px-4">
+      py-4 px-4 dark:text-Dark-Grayish-Blue">
         <p>
           <span>{itemCount}</span> items left
         </p>
-        <div className="sort-btns hidden md:flex gap-3">
+        <div className="sort-btns hidden md:flex gap-4 font-bold ">
           <button
+            className={showing==="All"?"text-Bright-Blue":"hover:text-Dark-Grayish-Blue dark:hover:text-Very-Light-Grayish-Blue"}
             type="button"
             value="All"
             onClick={(e) => SetShowing(e.target.value)}
@@ -89,6 +90,8 @@ function TodoList({
             All
           </button>
           <button
+            className=
+            {showing==="Active"?"text-Bright-Blue":"hover:text-Dark-Grayish-Blue dark:hover:text-Very-Light-Grayish-Blue"}
             type="button"
             value="Active"
             onClick={(e) => SetShowing(e.target.value)}
@@ -96,6 +99,7 @@ function TodoList({
             Active
           </button>
           <button
+          className={showing==="Completed"?"text-Bright-Blue":"hover:text-Dark-Grayish-Blue dark:hover:text-Very-Light-Grayish-Blue"}
             type="button"
             value="Completed"
             onClick={(e) => SetShowing(e.target.value)}
@@ -105,6 +109,7 @@ function TodoList({
         </div>
 
         <button
+        className="hover:text-Dark-Grayish-Blue dark:hover:text-Very-Light-Grayish-Blue"
           type="button"
           value="ClearCompleted"
           onClick={() => clearcompleted()}

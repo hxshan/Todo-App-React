@@ -26,7 +26,10 @@ const style={
       bg-Very-Light-Gray 
       dark:bg-Very-Dark-Desaturated-Blue
       dark:text-Very-Light-Gray 
-      first-of-type:rounded-t-md" 
+      first-of-type:rounded-t-md
+      font-JosefinSans
+      font-bold"
+
       >
       <div className="flex w-[100%] py-1">
         
@@ -34,11 +37,13 @@ const style={
       className="todo-complete-label w-[27px] h-[24px] flex 
           justify-center items-center rounded-full outline 
           outline-1 outline-Very-Dark-Grayish-Blue
-          hover:cursor-pointer">
+          hover:cursor-pointer hover:outline-Check-Background-To
+          lg:h-[27px]">
             
           <input
           type="checkbox"
-          className="todo-complete peer absolute w-[1rem] h-6 opacity-0"
+          className="todo-complete peer absolute w-[20px] h-[20px] 
+          hover:cursor-pointer opacity-0"
           name="todo-complete"
           id={"todo-complete-"+id}
           defaultChecked={isComplete}
@@ -51,7 +56,7 @@ const style={
           />
       </label>
         <div className="todo-text ml-5 w-[90%]" {...attributes} {...listeners}>
-          <p className={isComplete?"todo line-through text-Dark-Grayish-Blue":"todo"} name="todo" >
+          <p className={isComplete?"todo line-through text-Light-Grayish-Blue dark:text-Very-Dark-Grayish-Blue font-normal":"todo text-Very-Dark-Grayish-Blue dark:text-Light-Grayish-Blue"} name="todo" >
             {todo}
           </p>
         </div>
