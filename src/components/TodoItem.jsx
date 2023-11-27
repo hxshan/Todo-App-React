@@ -19,19 +19,39 @@ const style={
   return (
     <div
       ref={setNodeRef} style={style}  key={id} 
-      className="flex w-[100%] h-6 justify-between border-2 border-black" 
+      className="flex w-[100%] px-4 h-fit py-3
+      justify-between
+      border-b-[1px]
+      border-b-Dark-Grayish-Blue
+      bg-Very-Light-Gray 
+      dark:bg-Very-Dark-Desaturated-Blue
+      dark:text-Very-Light-Gray 
+      first-of-type:rounded-t-md" 
       >
-      <div className="flex w-[100%]">
-        <input
-          
+      <div className="flex w-[100%] py-1">
+        
+      <label htmlFor={"todo-complete-"+id}
+      className="todo-complete-label w-[27px] h-[24px] flex 
+          justify-center items-center rounded-full outline 
+          outline-1 outline-Very-Dark-Grayish-Blue
+          hover:cursor-pointer">
+            
+          <input
           type="checkbox"
-          className="todo-complete"
+          className="todo-complete peer absolute w-[1rem] h-6 opacity-0"
           name="todo-complete"
+          id={"todo-complete-"+id}
           defaultChecked={isComplete}
           onChange={(e) => toggleComplete(id, e.target.checked)}
         />
-        <div className="todo-text ml-5 w-[100%]" {...attributes} {...listeners}>
-          <p className="todo" name="todo">
+        <img
+            className="invisible peer-checked:visible"
+            src={images.check}
+            alt="check"
+          />
+      </label>
+        <div className="todo-text ml-5 w-[90%]" {...attributes} {...listeners}>
+          <p className={isComplete?"todo line-through text-Dark-Grayish-Blue":"todo"} name="todo" >
             {todo}
           </p>
         </div>

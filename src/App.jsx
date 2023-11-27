@@ -56,14 +56,14 @@ function App() {
     }
   }
 
-  function addTodo(item) {
+  function addTodo(item,check) {
     let Uid = crypto.randomUUID();
     setTodos([
       ...todos,
       {
         id: Uid,
         todo: item,
-        isComplete: false,
+        isComplete: check,
       },
     ]);
   }
@@ -103,11 +103,11 @@ function App() {
         alt="background"
       />
       <div
-        className="todo-form absolute top-2/4 left-2/4 
-        -translate-x-2/4 w-[30rem] flex flex-col gap-8"
+        className="todo-form absolute top-7  left-2/4 
+        -translate-x-2/4 w-[20rem] flex flex-col"
       >
-        <div className="top flex justify-between align-middle">
-          <h1 className="text-4xl font-bold dark:text-white">TODO</h1>
+        <div className="top flex justify-between align-middle w-[20rem]">
+          <h1 className="text-4xl font-bold text-[#FFFFFF]">TODO</h1>
           <div className="theme hover:cursor-pointer" onClick={()=>toggleTheme()}>
             {
               userTheme == "dark" &&(

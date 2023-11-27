@@ -25,12 +25,12 @@ function TodoList({
     else SetItemCount(completeTodos.length);
   }, [showing, todos]);
 
-
- 
-
   return (
-    <div className="todo-div">
-      <DndContext collisionDetection={closestCenter} onDragEnd={(e)=>handleDragEnd(e)}>
+    <div className="todo-div w-[20rem] drop-shadow-md">
+      <DndContext
+        collisionDetection={closestCenter}
+        onDragEnd={(e) => handleDragEnd(e)}
+      >
         <SortableContext items={todos} strategy={verticalListSortingStrategy}>
           {showing === "All" &&
             todos.map((todo) => {
@@ -73,31 +73,37 @@ function TodoList({
             })}
         </SortableContext>
       </DndContext>
-      <div className="List-buttons flex w-[100%] justify-between">
+      <div className="List-buttons flex w-[100%] 
+      justify-between bg-Very-Light-Gray rounded-b-md
+      dark:bg-Very-Dark-Desaturated-Blue
+      dark:text-Very-Light-Gray py-4 px-4">
         <p>
           <span>{itemCount}</span> items left
         </p>
-        <button
-          type="button"
-          value="All"
-          onClick={(e) => SetShowing(e.target.value)}
-        >
-          All
-        </button>
-        <button
-          type="button"
-          value="Active"
-          onClick={(e) => SetShowing(e.target.value)}
-        >
-          Active
-        </button>
-        <button
-          type="button"
-          value="Completed"
-          onClick={(e) => SetShowing(e.target.value)}
-        >
-          Completed
-        </button>
+        <div className="sort-btns hidden md:flex gap-3">
+          <button
+            type="button"
+            value="All"
+            onClick={(e) => SetShowing(e.target.value)}
+          >
+            All
+          </button>
+          <button
+            type="button"
+            value="Active"
+            onClick={(e) => SetShowing(e.target.value)}
+          >
+            Active
+          </button>
+          <button
+            type="button"
+            value="Completed"
+            onClick={(e) => SetShowing(e.target.value)}
+          >
+            Completed
+          </button>
+        </div>
+
         <button
           type="button"
           value="ClearCompleted"
@@ -105,6 +111,36 @@ function TodoList({
         >
           Clear Completed
         </button>
+      </div>
+      <div 
+      className="sort-btns-mob drop flex justify-center items-center 
+      md:hidden w-[20rem] py-1 gap-2 rounded-md mt-8
+      bg-Very-Light-Gray dark:bg-Very-Dark-Desaturated-Blue
+      dark:text-Very-Light-Gray">
+          <button
+          className={showing==="All"?"px-3 py-2 text-Bright-Blue":"px-3 py-2"}
+            type="button"
+            value="All"
+            onClick={(e) => SetShowing(e.target.value)}
+          >
+            All
+          </button>
+          <button
+          className={showing==="Active"?"px-3 py-2 text-Bright-Blue":"px-3 py-2"}
+            type="button"
+            value="Active"
+            onClick={(e) => SetShowing(e.target.value)}
+          >
+            Active
+          </button>
+          <button
+          className= {showing==="Completed"?"px-3 py-2 text-Bright-Blue":"px-3 py-2"}
+            type="button"
+            value="Completed"
+            onClick={(e) => SetShowing(e.target.value)}
+          >
+            Completed
+          </button>
       </div>
     </div>
   );

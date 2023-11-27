@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .checkbox-label:has(input:checked) {
+      @apply bg-gradient-to-r from-Check-Background-From to-Check-Background-To;
+    }
+    .todo-complete-label:has(input:checked) {
+      @apply bg-gradient-to-r from-Check-Background-From to-Check-Background-To;
+    }
+  }
