@@ -1,4 +1,5 @@
 import { useEffect, useState ,useRef} from "react";
+import bg_desk_light from "./assets/bg-desktop-light.jpg"
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import{
@@ -93,7 +94,7 @@ function App() {
     <div className="header-section w-[100%] relative">
       <img
         className="w-[100%]"
-        src="src/assets/bg-desktop-light.jpg"
+        src={bg_desk_light}
         alt="background"
       />
       <div
