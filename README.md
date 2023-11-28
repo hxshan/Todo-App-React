@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend mentor solution]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/todoapp-made-with-react-hF9zNsE_QK))
-- Live Site URL: [Todo App]([https://your-live-site-url.com](https://todo-react-application69.netlify.app))
+- Solution URL: [(https://www.frontendmentor.io/solutions/todoapp-made-with-react-hF9zNsE_QK)]
+- Live Site URL: [(https://todo-react-application69.netlify.app)]
 
 ## My process
 
