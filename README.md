@@ -16,8 +16,6 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -41,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend mentor solution]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/todoapp-made-with-react-hF9zNsE_QK))
+- Live Site URL: [Todo App]([https://your-live-site-url.com](https://todo-react-application69.netlify.app))
 
 ## My process
 
@@ -57,7 +55,7 @@ I also got to work with [Dnd Kit](https://dndkit.com) for the implementation or 
 
 ### Continued development
 
-prolly making is a full stack app maybe 
+prolly making this a full stack app maybe 
 
 ### Useful resources
 
@@ -66,10 +64,8 @@ prolly making is a full stack app maybe
 
   
 ## Author
-
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@hxshan]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/hxshan))
 - LinkedIn - [@heshan-gimhana]([https://www.twitter.com/yourusername](https://www.linkedin.com/in/heshan-gimhana/))
 
 ## Acknowledgments
-thanks to all the youtube tutorials and the documentation
+thanks to all the countless stack overflow articles and youtube tutorials
