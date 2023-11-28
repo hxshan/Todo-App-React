@@ -47,7 +47,7 @@ function TodoForm({ addTodo }) {
           className="w-[100%] h-10 ml-2 focus:outline-none bg-Very-Light-Gray
           dark:bg-Very-Dark-Desaturated-Blue 
           dark:text-Very-Light-Grayish-Blue
-          md:ml-4"
+          md:ml-4 text-Dark-Grayish-Blue"
           type="text"
           name="new-todo"
           id="new-todo"

@@ -22,7 +22,8 @@ const style={
       className="flex w-[100%] px-4 h-fit py-3
       justify-between
       border-b-[1px]
-      border-b-Dark-Grayish-Blue
+      border-b-Light-Grayish-Blue
+      dark:border-b-Dark-Grayish-Blue
       bg-Very-Light-Gray 
       dark:bg-Very-Dark-Desaturated-Blue
       dark:text-Very-Light-Gray 
@@ -63,6 +64,7 @@ const style={
       </div>
 
       <button
+
         type="button"
         name="delete"
         className="deleteItem"
