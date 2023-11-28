@@ -14,7 +14,9 @@ verticalListSortingStrategy
 
 
 function App() {
-  var [todos, setTodos] = useState([]);
+
+  var localTodos=JSON.parse(localStorage.getItem('todos'))==null?[]:JSON.parse(localStorage.getItem('todos'))
+  var [todos, setTodos] = useState(localTodos);
   var [activeTodos, setActiveTodos] = useState([]);
   var [completeTodos, setCompleteTodos] = useState([]);
   const Systheme=window.matchMedia("(prefers-color-scheme: dark)");
@@ -27,6 +29,7 @@ function App() {
     setCompleteTodos(() => {
       return todos.filter((todo) => todo.isComplete !== false);
     });
+    localStorage.setItem("todos",JSON.stringify(todos))
   }, [todos]);
  
   function handleDragEnd(event) {
