@@ -34,7 +34,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/hxshan/Todo-App-React/assets/85825544/87bf205d-1371-4765-b51d-4a464aa2ab4f)
+![image](https://github.com/hxshan/Todo-App-React/assets/85825544/1431424e-42d5-4f23-8092-696208e18bf1)
+![image](https://github.com/hxshan/Todo-App-React/assets/85825544/c3bc6551-60d7-453f-b916-4cd5092f6150)
+![image](https://github.com/hxshan/Todo-App-React/assets/85825544/32e36827-2e1d-4cc5-98f6-035438f76888)
+
 
 
 ### Links
