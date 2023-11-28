@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Screenshot
 
-![image](https://github.com/hxshan/Todo-App-React/assets/85825544/87bf205d-1371-4765-b51d-4a464aa2ab4f)
-![image](https://github.com/hxshan/Todo-App-React/assets/85825544/1431424e-42d5-4f23-8092-696208e18bf1)
+![image](https://github.com/hxshan/Todo-App-React/assets/85825544/9bc56f17-bf00-4441-ab86-1adcab2e6503)
+![image](https://github.com/hxshan/Todo-App-React/assets/85825544/9d95705d-15c0-479b-93d6-83627a597865)
 ![image](https://github.com/hxshan/Todo-App-React/assets/85825544/c3bc6551-60d7-453f-b916-4cd5092f6150)
 ![image](https://github.com/hxshan/Todo-App-React/assets/85825544/32e36827-2e1d-4cc5-98f6-035438f76888)
 
