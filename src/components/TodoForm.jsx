@@ -14,7 +14,7 @@ function TodoForm({ addTodo }) {
   };
 
   return (
-    <form action="" className="w-[100%] mt-8 lg:w-[35rem] font-JosefinSans font-bold" onSubmit={submitTodo}>
+    <form action="#" className="w-[100%] mt-8 lg:w-[35rem] font-JosefinSans font-bold" onSubmit={submitTodo}>
       <div
         className="form-row flex w-[100%] bg-Very-Light-Gray 
         dark:bg-Very-Dark-Desaturated-Blue 

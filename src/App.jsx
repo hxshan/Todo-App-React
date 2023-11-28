@@ -96,11 +96,13 @@ function App() {
   return (
     <div className="header-section w-[100%] relative">
       <img
+        role="background"
         className="hidden md:block w-[100%]"
         src={userTheme=="dark"?images.bg_desk_dark:images.bg_desk_light}
         alt="background"
       />
       <img
+        role="background"
         className="md:hidden w-[100%]"
         src={userTheme=="dark"?images.bg_mob_dark:images.bg_mob_light}
         alt="background"
