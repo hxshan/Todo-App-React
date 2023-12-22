@@ -112,7 +112,7 @@ function App() {
         -translate-x-2/4 w-[20rem] flex flex-col lg:top-1/3 md:w-[35rem] xl:top-[55%]"
       >
         <div className="top flex justify-between align-middle w-[20rem] md:w-[35rem]">
-          <h1 className="text-4xl font-bold text-[#FFFFFF]">TODO</h1>
+          <h1 className="text-4xl font-bold text-[#FFFFFF] tracking-widest">TODO</h1>
           <div className="theme hover:cursor-pointer" onClick={()=>toggleTheme()}>
             {
               userTheme == "dark" &&(
